@@ -38,3 +38,4 @@ resource "aws_instance" "mtc_node" {
   root_block_device {
     volume_size = var.vol_size
   }
+}
