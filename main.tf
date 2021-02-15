@@ -19,7 +19,7 @@ resource "random_id" "mtc_node_id" {
 
 resource "aws_key_pair" "mtc_auth" {
   key_name   = var.key_name
-  public_key = file(var.public_key_material)
+  public_key = var.public_key_material
 }
 
 resource "aws_instance" "mtc_node" {
